@@ -1,0 +1,49 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>flex-image</title>
+    <meta name="description" content="flex-image">
+    <meta name="author" content="simwai">
+
+    <style>
+        .flex-container {
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-direction: column;
+            flex-direction: column;
+            -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-align-items: center;
+            align-items: center;
+            -webkit-align-content: center;
+            align-content: center;
+        }
+
+        video {
+            width: -webkit-fill-available;
+            height: -webkit-fill-available;
+            object-fit: cover;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <video autoplay loop muted>
+            <source src="http://simonwaiblinger.de/chrome-wallpapers/naruto_uzumaki.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</body>
+
+</html>
